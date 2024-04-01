@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    margin: auto;
+    margin: 0;
     padding: 0;
     line-height: 1.5;
     
@@ -63,8 +63,7 @@ header {
     top: 0;
     min-height: 50px;
     width: 100%;
-    z-index: 1;
-    background: rgb(13,177,65);
+    /*z-index: 1;*/
     background: linear-gradient(60deg, rgba(13,177,65,1) 0%, rgba(21,108,186,1) 100%);
     box-shadow: 0 15px 59px -20px rgba(52, 51, 51, 0.8);
     
@@ -139,59 +138,35 @@ nav {
   }
 
 
-/* Media Queries - Nav --*/
-@media(max-width: 768px) {
-    .container{
-        width: 90%;
-        margin: auto;
-    }
-    nav {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    nav ul {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    nav ul li {
-      padding: 5px 0;
-    }
-    .submenu {
-      position: static;
-      display: none;
-      margin-left: 20px;
-      transition: 0.3s;
-    }
-    nav ul li:hover .submenu {
-      display: block;
-    }
-    .logoandtitle {
-        margin: 10px 0;
-    }
-  }
+
 /*--- callout ----*/
 
 .callout {
-    background: linear-gradient(rgba(195, 249, 212, 0.8), rgba(148, 201, 247, 0.8)), url("images/calloutimage2.jpg") no-repeat top center fixed ;
+    background: linear-gradient(rgba(195, 249, 212, 0.9), rgba(148, 201, 247, 0.9)), url("images/calloutimage2.jpg");
     height: 80vh;
     width: 100%;
     background-size: cover;
-    position: cover;
+    background-position: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    width: 100%;
 }
 
 .callout h1 {
-    font-size: 4.5em;   
+    font-size: 3em;   
     font-style: italic;
     color: #015264;
-    padding-top: 10%;
+    padding: 0 20px;
 }
 
 .callout p {
-    font-size: 3em;
-    background-color: #fafafa;
-   
+    font-size: 1.2em;
+    margin-bottom: 40px;
 }
+
+
 
 
 
@@ -201,27 +176,40 @@ nav {
 
 .roundimages {
     background-color: #fafafa;
-    margin: 0;
-    padding: 20px;
-    height: 70vh;
+    /*padding: 20px 10px;*/
     margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: block;
+}
+
+.sectiontitle {
+    margin-top: 40px;
+    text-align: center;
 }
 .sectiontitle h2 {
-    text-align: center;
     color: #015264;
 }
 
-.sectiontitle p{
-    text-align: center;
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding: 0 20px;
+    justify-content: center;
 }
 
 .rimage {
     float: left;
-    width: 30%;
-    padding: 0 20px;
-    margin: 10px;
     text-align: center;
-    display: block;
+    width: 25%;
+    padding: 20px 20px;
+    margin: 10px;
+    border: 1px #015264 solid;
+    border-radius: 5px;
+    background-color: #fafafa;
+    box-shadow: 0 10px 10px -10px #333;
 }
 
 .rimage h3 {
@@ -229,9 +217,9 @@ nav {
 }
 
 .rimage > img {
-    overflow: hidden;
+    /*overflow: hidden; */
     border-radius: 50%;
-    position: relative;
+    /* position: relative; */
     width: 12em;
     height: 12em;
     border: 1px #015264 solid;
@@ -250,31 +238,33 @@ nav {
 /*------ Subscribe -----*/
 
 .newsletter {
-    padding: 30px 100px;
+    padding: 30px 200px;
     color: #fafafa;
     background-image: linear-gradient(60deg, rgba(4, 171, 57, 0.8), rgba(3, 104, 172, 0.8));
-    min-height: 3em;
-    max-height: 5em;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+   
 }
 
-.newsletter h1 {
-    float: left;
-    margin-top: 29px;
+
+.subscribe {
+    padding: 0px;
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0;
 }
 
-.newsletter form {
-    float: right;
-    margin-top: 15px;
-    
-}
-
-.newsletter input {
+.subscribe input[type="email"] {
     padding: 5px;
     height: 25px;
     width: 250px;
     border: 1px #015264 solid;
     margin-right: 1em;
+    display: flex;
+    align-items: center;
 }
 
 .buttonsubscribe a {
@@ -347,26 +337,36 @@ a:hover {
 	margin:0 10px 10px 0;
 	text-align: center;
 	line-height: 40px;
-	border-radius: 50%;
+	border-radius: 5px;
 	color: #ffffff;
 	transition: all 0.5s ease;
     filter: invert(100%) sepia(0%) saturate(250%) hue-rotate(20deg) brightness(100%) contrast(90%);
     padding: 5px;;
 }
-.footer-col .social-links  a:hover{
+.footer-col .social-links img a:hover{
 	color: #ffa600;
+    background-color: #ffa600;
+    fill: #d88c00;
+    
+
 }
 
 .copyright {
     background-color: #24262b;
-    padding: 20px 80px;
+    padding: 10px 0;
     color: #fafafa;
-    position: absolute;
-    width: 100%;
-    text-align: center;
     margin: auto;
-
+    text-align: center;
 }
+
+.copyright a {
+    color: #ffa600;
+}
+
+.copyright a:hover {
+    color: #d88c00;
+}
+
 
 
 
@@ -501,8 +501,80 @@ a:hover {
     display: inline; 
 }
   
- 
+/* Media Queries ---------------------------------*/
 
+/*--- responsive nave ---*/
+@media(max-width: 768px) {
+    .container{
+        width: 90%;
+        margin: auto;
+    }
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+      z-index: none;
+    }
+    nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    nav ul li {
+      padding: 5px 0;
+    }
+    .submenu {
+      position: static;
+      display: none;
+      margin-left: 20px;
+      transition: 0.3s;
+    }
+    nav ul li:hover .submenu {
+      display: block;
+    }
+    .logoandtitle {
+        margin: 10px 0;
+    }
+
+/*--- responsive callout --- */
+    .callout {
+        padding: 0 10px;
+        margin-top: 150px;;
+      }
+      .callout h1 {
+        font-size: 2.5rem;
+      }
+      .callout p {
+        font-size: 1rem;
+      }
+
+/*--- responsive newsletter --- */
+    .newsletter  {
+        padding: 15px;
+        display: block;
+    }  
+
+    .subscribe input[type="email"]  {
+        width:100%;
+        margin: 10px;
+    }
+
+    .buttonsubscribe {
+        width: 100%;
+        margin-left: 15px;
+    }
+   .subscribe {
+        display: block;
+        align-content: center;
+        float: inherit;
+   }
+    
+
+/*--- round images --- */
+      .rimage {
+        width: 100%;
+      }
+  } 
+
+  
 
 
 
