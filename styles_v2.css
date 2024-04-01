@@ -166,12 +166,6 @@ nav {
     margin-bottom: 40px;
 }
 
-
-
-
-
-
-
 /*---- round images --- */
 
 .roundimages {
@@ -235,6 +229,40 @@ nav {
 .rimage a:hover {
     color: #ffa600;
 }
+
+/*------ video section-----*/
+ 
+  .videosection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px 0;
+    background-color: #ffa600;
+    padding: 30px;
+    box-shadow: 0 5px 10px -5px rgba(52, 51, 51, 0.8);
+  }
+  
+  /* Video container styles */
+  .video-container {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .video-container iframe {
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  .text-container {
+    flex: 1;
+  }
+
+  .text-container h2 {
+    color: #015264;
+  }
+  
+
 
 /*------ Subscribe -----*/
 
@@ -764,3 +792,16 @@ a:hover {
       flex: 1;
     }
   }
+
+    /* Responsive styles */
+    @media screen and (max-width: 768px) {
+        .videosection {
+          flex-direction: column;
+        }
+      
+        .video-container, .text-container {
+          margin-right: 0;
+          flex: 1;
+        }
+      }
+    
