@@ -66,7 +66,7 @@ header {
     /*z-index: 1;*/
     background: linear-gradient(60deg, rgba(13,177,65,1) 0%, rgba(21,108,186,1) 100%);
     box-shadow: 0 15px 59px -20px rgba(52, 51, 51, 0.8);
-    
+    top: 0;
 }
 
 nav {
@@ -374,6 +374,18 @@ a:hover {
 /* --- about Hurling page ---*/
 
 /* --- aside ---*/
+.aboutpageimage {
+    background-image: linear-gradient(rgba(195, 249, 212, 0.9), rgba(148, 201, 247, 0.9)), url(./images/calloutimage.jpg);
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #015264;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
 
 .aboutimage {
     background: linear-gradient(rgba(195, 249, 212, 0.8), rgba(148, 201, 247, 0.8)), url("https://www.irishtimes.com/resizer/GubPLgd69wKMa5pDK76XDD55wII=/1600x0/filters:format(jpg):quality(70)/cloudfront-eu-central-1.images.arcpublishing.com/irishtimes/LMRR3Z6JPIJQNSVW3G5B4HT4MM.jpg") no-repeat top center fixed; 
@@ -407,7 +419,7 @@ a:hover {
 
 /* ----- form css ---*/
 #testpageheader {
-    margin: auto;
+    margin-top: 180px;;
 }
   
 .formheader h1  {
@@ -455,22 +467,33 @@ select {
     min-height: 2em;
 }
   
-input, textarea {
+input, 
+textarea, {
     background-color: #fafafa;
     border: 1px solid #015264;
     color:#24262b;
     padding-left: 5px;
 }
-  
+
 .inline {
     width: unset;
     margin: 0 0.5em 0 0;
     vertical-align: middle;
 }
 
-#multichoice {
+#multichoice
+{
     padding: 5px;
     height: 100px;
+    background-color: #fafafa;
+    border: 1px solid #015264;
+}
+
+#referrer {
+    padding: 5px;
+    height: 30px;
+    background-color: #fafafa;
+    border: 1px solid #015264;
 }
 
 option::selection {

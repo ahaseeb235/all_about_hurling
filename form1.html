@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- meta tags -->
+     <meta charset="UTF-8">
+     <!-- viewport for responsive layout -->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content="All about Hurling">
+     <meta name="keywords" content="hurling, games, sports, ireland">
+     <meta name="author" content="Abdul Haseeb">
+     <!-- link to css file ahstyle.css -->
+     <link rel="stylesheet" href="styles_v2.css">
+     <title>Test your Knowledge</title>
+</head>
+<body>
+    <header>
+        <!-- navbar -->
+        <div class="container">
+             <!-- new nav -->
+            <nav>
+                <div class="logoandtitle">
+                    <img src="./images/hurlinglogosvg.svg" alt="hurling Logo" class="hurlinglogo">
+                    <span class="sitetitle">All About Hurling</span>
+                </div>
+                <ul>
+                    <li><a href="indexv2.html">Home</a></li>
+                    <li>
+                        <a href="about1.html">About Hurling</a>
+                            <div class="submenu">
+                                <a href="#">Teams Table</a>
+                                <a href="#">Image Gallery</a>
+                            </div>
+                    </li>
+                    <li><a href="form1.html">Quiz</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- form header -->
+    <section id="testpageheader">
+        <div class="formheader">
+            <h1>Test Your Knowledge</h1>
+            <p>Fill in the form below to check your knowledge about the sport</p>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- Form -->
+
+
+    <form method="post" action='#'>
+    <fieldset>
+        <legend>Tell Us About Yourself</legend>
+        <label for="first-name">Your First Name: <input id="first-name" name="first-name" type="text" required /></label>
+        <label for="last-name">Your Last Name: <input id="last-name" name="last-name" type="text" required /></label>
+        <label for="email">Your Email: <input id="email" name="email" type="email" required /></label>
+        <label for="birthdate">Date of Birth <input id="birthdate" type="date" name="birthdate"/></label>
+        <label for="Gender">Gender
+            <select id="referrer" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">Female</option>
+            <option value="2">Male</option>
+            <option value="3">None of the above</option>
+            <option value="4">Prefer not to say</option>
+            </select>
+        </label>
+    </fieldset>
+    <fieldset>
+        <legend>TRUE or FALSE?</legend>
+        <ol>
+            <li>Hurling is an indoor game.</li>
+                <label for="TRUE"><input id="TRUE" type="radio"  class="inline" /> TRUE</label>
+                <label for="FALSE"><input id="FALSe" type="radio"  class="inline" /> FALSE</label>
+            <li>The Sliotar is similar to baseball</li>
+                <label for="TRUE"><input id="TRUE" type="radio"  class="inline" /> TRUE</label>
+                <label for="FALSE"><input id="FALSe" type="radio"  class="inline" /> FALSE</label>
+            <li>Hurling is similar to golf</li>
+                <label for="TRUE"><input id="TRUE" type="radio"  class="inline" /> TRUE</label>
+                <label for="FALSE"><input id="FALSe" type="radio"  class="inline" /> FALSE</label>
+            <li>It is better to wear a helmet during a practice session.</li>
+                <label for="TRUE"><input id="TRUE" type="radio"  class="inline" /> TRUE</label>
+                <label for="FALSE"><input id="FALSe" type="radio"  class="inline" /> FALSE</label>
+        </ol>
+    </fieldset>
+    <fieldset>
+        <legend>Select the correct options</legend>
+        <label for="multichoice">What are used to play hurling?
+        <select id="multichoice" name="multichoice" multiple>
+            <option value="Sliotar">Sliotar</option>
+            <option value="football">football</option>
+            <option value="helmet">helmet</option>
+            <option value="bat">bat</option>
+            <option value="hurl">hurl</option>
+        </select>
+        <p class="helptext">Hold down the Ctrl+click (windows) or Command+click (Mac) button to select multiple options</p>
+        </label>
+        
+    </fieldset>
+    <label for="bio">Give us some feedback about this sport. We'd love to hear from you. 
+        <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="I am really interested in this sport ..."></textarea>
+    </label>
+    <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+    </label>
+    <button type="submit" class="submitform"><a href="#">Submit</a></button>
+    </form>
+
+        
+
+
+    
+ <!-- subscribe -->
+    
+ <section class="newsletter">
+    <h1>Subscribe to our newsletter</h1>
+    <form class="subscribe">
+        <input id="email" name="email" type="email" placeholder="Please Enter Email"/>
+        <button type="submit" class="buttonsubscribe"><a href="#">Subscribe</a></button>
+    </form>
+</section>
+
+<!-- footer -->
+<footer class="footer">
+<div class="container">
+<div class="row">
+    <div class="footer-col">
+        <h4>Sitemap</h4>
+        <ul>
+            <li><a href="indexv2.html">Home</a></li>
+            <li><a href="about1.html">About Hurling</a></li>
+            <li><a href="form1.html">Test Your Knowledge</a></li>
+        </ul>
+    </div>
+    <div class="footer-col">
+        <h4>Useful Links</h4>
+        <ul>
+            <li><a href="https://www.gaa.ie/hurling" target="_blank">GAA</a></li>
+            <li><a href="https://www.dublingaa.ie/" target="_blank">Dublin GAA</a></li>
+            <li><a href="https://experiencegaelicgames.com/authentic-irish/hurling/" target="_blank">What is Hurling</a></li>
+        </ul>
+    </div>
+    <div class="footer-col">
+        <h4>contact me</h4>
+        <div class="social-links">
+            <a href="https://github.com/ahaseeb235" target="_blank"><img class="socialicons" src="./images/icons8-github-64.svg" alt="github" ></a> 
+            <a href="#"><img class="socialicons" src="./images/icons8-twitterx.svg" alt="twitterx--v2"/></a>
+            <a href="#"><img class="socialicons" src="./images/instagram-logo.svg" alt="twitterx--v2"/></a>
+            <a href="#"><img class="socialicons" src="./images/logo-tiktok.svg" alt="twitterx--v2"/></a>
+            <a href="mailto:ahaseeb235@gmail.com"><img class="socialicons" src="./images/email.svg" alt="twitterx--v2"/></a>
+        </div>
+    </div>
+
+</div>
+</div>
+
+
+</footer>
+<div class="copyright">
+<p>Design by <a href="mailto:ahaseeb235@gmail.com">Abdul Haseeb</a> for Assessment. No Copyright &copy; 2024</p>
+</div>
+
+</body>
+</html>
+
+
