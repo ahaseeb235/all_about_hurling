@@ -1,43 +1,53 @@
 # HTML / CSS PROJECT: All About Hurling
-Abdul Haseeb
+by Abdul Haseeb
 
 githubpages link: https://github.com/ahaseeb235
+
 github-repo link: https://github.com/ahaseeb235/all_about_hurling
 
 
 ## Project Goal:
 The goal of the project is to create a website with the following features: 
 * Responsive website using HTML and CSS
+* Multiple Pages linked to .css file
+* Create table [on about page]
+* Create Form [on Quiz page]
+* Hyperlink to email [in the footer]
+* External Hyperling [several links on home page and about page]
+* video section [on home page]
+* image gallery section
+
+
 
 ## Sitemap
+HOME 
+ - About hurling
+ - Quiz
 
-
-## Wireframe
+"Home" is the main page. "About Hurling" and "Quiz" pages are linked via the Home page. The footer contains Sitemap. 
 
 ## Project Mockups
+Several sketchs and mockups were made. Here is an image of the initial mockup
+![alt text](./images/mockup1.png)
+
+## Logo:
+Logo was created using canvas.com in PNG format and converted to SVG format. I chose SVG format to be able to scale the logo, control color fill and background color. The logo can also be used as an icon. The filter was adapte from Barrett Sonntag's "CSS filter generator to convert from black to target hex color" Codepen Notebook. 
+
+
+
 
 ## GAA Teams in Ireland 
 Source: https://en.wikipedia.org/w/index.php?title=National_Hurling_League&action=edit&section=19
 
 
-'''html
 
-    <form id="something">
-    </form>
-
-'''
-    
-
-
-'''
-
+## Some initial notes 
 Possible Working titles:
 -	All About Hurling
 -	Learning Hurling
 
 
-Logo:
-Logo was created using canvas.com in PNG format and converted to SVG format. I chose SVG format to be able to scale the logo, control color fill and background color. The logo can also be used as an icon. The filter was adapte from Barrett Sonntag's "CSS filter generator to convert from black to target hex color" Codepen Notebook. 
+
 
 
 Hex codes
