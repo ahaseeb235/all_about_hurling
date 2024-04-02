@@ -1,7 +1,7 @@
 # HTML / CSS PROJECT: All About Hurling
 by Abdul Haseeb
 
-githubpages link: https://github.com/ahaseeb235
+githubpages link: [https://github.com/ahaseeb235](https://ahaseeb235.github.io/all_about_hurling/)
 
 github-repo link: https://github.com/ahaseeb235/all_about_hurling
 
